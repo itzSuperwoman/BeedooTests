@@ -1,4 +1,4 @@
-<h1 align="center">:computer::alien: Beedoo Tests</h1>
+<h1 align="center">:computer::alien: Beedoo Tests :flying_saucer:.</h1>
 
 ## :memo: Descrição
 User story, casos de testes, testes frontend e backend automatizados para o processo seletivo da Beedoo.
