@@ -1,4 +1,4 @@
-<h1 align="center">:file_cabinet: Beedoo Tests</h1>
+<h1 align="center">:file_cabinet::honeybee: Beedoo Tests</h1>
 
 ## :memo: Descrição
 User story, casos de testes, testes frontend e backend automatizados para o processo seletivo da Beedoo.
@@ -19,7 +19,7 @@ User story, casos de testes, testes frontend e backend automatizados para o proc
 
 ## :wrench: Tecnologias utilizadas
 * Javascript;
-* Cypress
+* Cypress;
 
 ## :rocket: Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
@@ -45,4 +45,4 @@ npx cypress open
 
 ## :dart: Status do projeto
 
-Concluído
+Concluído :chart:
