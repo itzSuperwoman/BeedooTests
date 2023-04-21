@@ -5,11 +5,11 @@ context('Aplicando a vaga', () => {
     beforeEach(() => {
         cy.visit('https://beedoo.com.br/')
         });
-    it('', () => {
+    it('Preenchendo formulário', () => {
+
         cy.get('.rcc-links .rcc-accept-btn').click()
         
         cy.get('[href="https://app.pipefy.com/public/form/NWn55kc1"]').invoke("removeAttr", "target").click()
-
 
         cy.origin('https://app.pipefy.com', () => {
 
