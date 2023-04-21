@@ -13,12 +13,28 @@ context('Aplicando a vaga', () => {
 
         cy.origin('https://app.pipefy.com', () => {
 
-            cy.get('[name="publicForm.0.nome_completo.innerValue"]').type('Monica Adriana Moraes Camargo')
-            cy.get('#publicForm-Email-email').type('monicamoraescamargo@gmail.com')
-            cy.get('[name="publicForm.2.vaga.innerValue"]').type('Analista QA')
+            var candidato = []
+
+                candidato["nome"] = 'Monica'
+                candidato["email"] = 'monicamoraesmcamargo@gmail.com'
+                candidato["cargo"] = "Analista QA"
+                candidato["tel"] = '43988463744'
+
+            cy.get('[name="publicForm.0.nome_completo.innerValue"]').type(candidato.nome)
+            expect('[name="publicForm.0.nome_completo.innerValue"]').to.be.not.null
+
+            cy.get('#publicForm-Email-email').type(candidato.email)
+            expect('#publicForm-Email-email').to.be.not.null
+
+            cy.get('[name="publicForm.2.vaga.innerValue"]').type(candidato.cargo)
+            expect('[name="publicForm.2.vaga.innerValue"]').to.be.not.null
+
             cy.get('.selected-flag').click() //seleciona bandeira
             cy.contains('Brazil').click()
-            cy.get('#publicForm-Phone-telefone').type(43988463744)
+
+            cy.get('#publicForm-Phone-telefone').type(candidato.tel)
+            expect('#publicForm-Phone-telefone').to.be.not.null
+
             cy.contains('Anexe seu currículo').click()
     
             
