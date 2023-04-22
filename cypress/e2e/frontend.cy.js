@@ -29,7 +29,7 @@ context('Aplicando a vaga', () => {
             cy.get('[name="publicForm.2.vaga.innerValue"]').type(candidato.cargo)
             expect('[name="publicForm.2.vaga.innerValue"]').to.be.not.null
 
-            cy.get('.selected-flag').click() //seleciona bandeira
+            cy.get('.selected-flag').click() 
             cy.contains('Brazil').click()
 
             cy.get('#publicForm-Phone-telefone').type(candidato.tel)
@@ -41,7 +41,7 @@ context('Aplicando a vaga', () => {
             cy.get('input[type=file]').selectFile({
                 contents: Cypress.Buffer.from('file contents'),
                 fileName: 'CV-QA.pdf', 
-                mimeType: 'application/pdf', // lista: https://www.itmnetworks.com.br/lista-completa-de-mime-types
+                mimeType: 'application/pdf', 
                 lastModified: new Date().getTime(),}, {force: true})
 
             cy.get('#publicForm-LongText-por_que_voc_est_aplicando_para_esta_vaga').type('Por me identificar muito com a cultura da empresa! Também quero ser abeedoozida.')
